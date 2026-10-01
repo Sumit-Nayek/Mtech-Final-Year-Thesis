@@ -1,0 +1,19 @@
+# Python Caches & Environments
+__pycache__/
+*.py[cod]
+*\$py.class
+.venv/
+venv/
+ENV/
+
+# Jupyter & IDEs
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# Dataset & Model Checkpoints
+/data/
+*.h5
+*.nii.gz
+*.pt
+*.pth
