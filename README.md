@@ -23,7 +23,7 @@ This project bridges these two domains by utilizing a shared-latent 2D network w
 After reviewing recent literature (2021–2026) across medical image analysis and multi-task learning, this research is structured around four primary objectives:
 
 1. **Multi-Task Architecture Design:** Construct a shared 2D encoder backbone with bifurcated output paths: a multi-class decoder for semantic segmentation (LV, RV, MYO) and a latent feature classifier for 5 clinical cardiomyopathy cohorts.
-2. **Formulation of Topology-Preserving Loss (\\(L_{topo}\\)):** Develop a lightweight, differentiable boundary penalty using 2D Sobel spatial gradient operators to penalize edge inconsistencies and disconnected regions without \\(O(N^3)\\) persistent homology loops.
+2. **Formulation of Topology-Preserving Loss L_{topo}:** Develop a lightweight, differentiable boundary penalty using 2D Sobel spatial gradient operators to penalize edge inconsistencies and disconnected regions without O(N^3) persistent homology loops.
 3. **Quantifying Anatomical Viability:** Move beyond standard pixel-wise Dice metrics to evaluate structural continuity using Hausdorff Distance (**HD95**) and explicitly track topological violation rates.
 4. **Proving the Joint-Learning Benefit:** Demonstrate mathematically and statistically that enforcing topologically sound segmentation masks acts as an implicit regularizer, reducing classifier cross-validation variance and improving clinical diagnostic accuracy.
 
