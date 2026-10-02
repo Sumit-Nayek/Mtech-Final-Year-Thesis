@@ -88,11 +88,11 @@ cardiac-mri-topology/
 
 ## 🗓️ 11-Month Execution & Publication Roadmap
 
-* **Phase 1: Mathematical Novelty & \\(L_{topo}\\) Formulation (Months 1–4 / Jun–Sep 2026)**
+* **Phase 1: Mathematical Novelty & (L_{topo} Formulation (Months 1–4 / Jun–Sep 2026)**
   * ACDC dataset preprocessing, HDF5 slice extraction, multi-task baseline setup, and Sobel gradient penalty integration.
   * *Target Publication 1:* **IEEE Transactions on Medical Imaging (TMI)** or **Medical Image Analysis**.
 * **Phase 2: Multi-Task Framework & Joint Optimization (Months 5–8 / Oct 2026–Jan 2027)**
-  * Integration of classification head, ablation study (\\(L_{topo}\\) ON vs. OFF), and gradient norm tracking.
+  * Integration of classification head, ablation study L_{topo} ON vs. OFF, and gradient norm tracking.
   * *Target Publication 2:* **IEEE Journal of Biomedical and Health Informatics (JBHI)** or **Machine Intelligence Research**.
 * **Phase 3: Clinical Validation & Thesis Assembly (Months 9–11 / Feb–Apr 2027)**
   * Derived clinical marker calculation (EF, Myocardial Mass, Wall Thickness), final thesis defense.
