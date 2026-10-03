@@ -1,4 +1,4 @@
-# Multi-Task Cardiac Cine-MRI Analysis via Topology-Preserving Multi-Class Loss
+# Multi-Task Cardiac MRI Analysis via Topology Preserving Multi Class Loss
 
 This repository contains the complete implementation for the MTech thesis research on joint multi-task cardiac MRI analysis. The framework uses a shared 2D convolutional encoder to simultaneously perform 4-class anatomical segmentation (Background, LV, RV, MYO) and 5-class clinical cardiomyopathy risk classification (Normal, MINF, DCM, HCM, ARV) on short-axis cine-MRI slices. 
 
