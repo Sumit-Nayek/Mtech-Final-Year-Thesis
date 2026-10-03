@@ -8,10 +8,10 @@ To prevent non-manifold shapes (such as broken myocardial rings or floating pixe
 
 ## 📌 Project Brief & Research Context
 
-Standard 2D deep learning models trained on volumetric MRI slices suffer from a lack of global spatial context. This results in physically impossible anatomical predictions—such as overlapping ventricular cavities or fragmented myocardial walls—that cardiologists would immediately reject. While 3D networks can preserve volumetric continuity, they introduce an \\(O(N^3)\\) computational tax, leading to VRAM bottlenecks and tiny batch sizes during joint training.
+Standard 2D deep learning models trained on volumetric MRI slices suffer from a lack of global spatial context. This results in physically impossible anatomical predictions such as overlapping ventricular cavities or fragmented myocardial walls—that cardiologists would immediately reject. While 3D networks can preserve volumetric continuity, they introduce an \\(O(N^3)\\) computational tax, leading to VRAM bottlenecks and tiny batch sizes during joint training.
 
 Conversely, existing literature remains heavily siloed:
-1. **Segmentation-focused topology papers** (e.g., persistent homology methods using Betti numbers \\(b_0, b_1\\)) enforce structural constraints but ignore downstream clinical diagnosis while suffering from high per-epoch computational costs.
+1. **Segmentation focused topology papers** (e.g., persistent homology methods using Betti numbers \\(b_0, b_1\\)) enforce structural constraints but ignore downstream clinical diagnosis while suffering from high per-epoch computational costs.
 2. **Multi-task networks** combine segmentation and classification on the ACDC dataset but lack explicit spatial boundary constraints, leaving them vulnerable to topological artifacts.
 
 This project bridges these two domains by utilizing a shared-latent 2D network where enforcing spatial topological continuity natively regularizes the feature embeddings fed to the 5-class clinical disease classifier.
