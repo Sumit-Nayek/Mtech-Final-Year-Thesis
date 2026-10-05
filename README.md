@@ -29,23 +29,6 @@ After reviewing recent literature (2021–2026) across medical image analysis an
 
 ---
 
-##  Mathematical Formulation
-
-The total joint optimization target is defined as:
-
-\\[L_{total} = \alpha L_{seg} + \beta L_{class} + \gamma L_{topo}\\]
-
-Where:
-* **\\(L_{seg}\\)**: Standard Cross-Entropy / Soft Dice loss evaluated against 4-class ground truth masks.
-* **\\(L_{class}\\)**: Categorical Cross-Entropy loss evaluated against 5 clinical disease classes.
-* **\\(L_{topo}\\)**: The **Directional Gradient Boundary Penalty** calculated across anatomical channels \\(c \in \{\text{LV}, \text{RV}, \text{MYO}\}\\):
-
-\\[L_{topo} = \sum_{c} \frac{1}{N} \sum_{i=1}^{N} \left\| \nabla P_i^c - \nabla Y_i^c \right\|^2\\]
-
-Here, \\(\nabla P_i^c\\) and \\(\nabla Y_i^c\\) represent spatial gradient vectors extracted via fixed \\(3 \times 3\\) Sobel \\(X\\) and \\(Y\\) filters applied to predicted channel probabilities and one-hot ground truth masks.
-
----
-
 ##  Target Performance Metrics
 
 Derived from state-of-the-art benchmarks on the **ACDC (Automated Cardiac Diagnosis Challenge)** dataset:
