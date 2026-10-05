@@ -6,9 +6,9 @@ To prevent non-manifold shapes (such as broken myocardial rings or floating pixe
 
 ---
 
-## 📌 Project Brief & Research Context
+##  Project Brief & Research Context
 
-Standard 2D deep learning models trained on volumetric MRI slices suffer from a lack of global spatial context. This results in physically impossible anatomical predictions such as overlapping ventricular cavities or fragmented myocardial walls—that cardiologists would immediately reject. While 3D networks can preserve volumetric continuity, they introduce an \\(O(N^3)\\) computational tax, leading to VRAM bottlenecks and tiny batch sizes during joint training.
+Standard 2D deep learning models trained on volumetric MRI slices suffer from a lack of global spatial context. This results in physically impossible anatomical predictions such as overlapping ventricular cavities or fragmented myocardial walls—that cardiologists would immediately reject. While 3D networks can preserve volumetric continuity, they introduce an (O(N^3) computational tax, leading to VRAM bottlenecks and tiny batch sizes during joint training.
 
 Conversely, existing literature remains heavily siloed:
 1. **Segmentation focused topology papers** (e.g., persistent homology methods using Betti numbers \\(b_0, b_1\\)) enforce structural constraints but ignore downstream clinical diagnosis while suffering from high per-epoch computational costs.
@@ -18,7 +18,7 @@ This project bridges these two domains by utilizing a shared-latent 2D network w
 
 ---
 
-## 🎯 Literature-Derived Study Objectives
+##  Literature-Derived Study Objectives
 
 After reviewing recent literature (2021–2026) across medical image analysis and multi-task learning, this research is structured around four primary objectives:
 
@@ -29,7 +29,7 @@ After reviewing recent literature (2021–2026) across medical image analysis an
 
 ---
 
-## 🧮 Mathematical Formulation
+##  Mathematical Formulation
 
 The total joint optimization target is defined as:
 
@@ -46,7 +46,7 @@ Here, \\(\nabla P_i^c\\) and \\(\nabla Y_i^c\\) represent spatial gradient vecto
 
 ---
 
-## 📊 Target Performance Metrics
+##  Target Performance Metrics
 
 Derived from state-of-the-art benchmarks on the **ACDC (Automated Cardiac Diagnosis Challenge)** dataset:
 
